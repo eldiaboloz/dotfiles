@@ -1,0 +1,23 @@
+alias lsal="ls --color=never -al"
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias snmap='nmap -T5 -sP'
+alias stod="stod(){ date '+%Y-%m-%d %H:%M:%S' -d \"@\${1}\"; unset -f stod; };stod"
+alias dce='docker container exec -i -t'
+alias dcr='docker container run -i -t'
+alias dci='docker container inspect'
+alias dcin="dcin(){docker container inspect "\$1" | jq -r '.[].NetworkSettings.Networks.bridge.IPAddress'; unset -f dcin;};dcin"
+alias gl='git log --stat'
+alias glp='git log -p'
+alias gitdc="git diff --cached"
+alias gitd="git diff"
+alias gitco="git checkout"
+alias rsyncv='rsync -av --stats --progress --info=PROGRESS2 --numeric-ids --no-inc-recursive'
+
+alias digs='dig +short'
+alias ssht='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+
+
+
+
+
+

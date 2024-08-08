@@ -1,0 +1,11 @@
+alias systemctl='systemctl --user'
+alias journalctl='journalctl --user'
+alias fix_kbd='$HOME/dev/i3wmonarch/scripts/i3wm/fix_keyboard.sh'
+alias gitcrypt-export='git-crypt export-key -- - | base64 -w 0 | xclip -selection clipboard'
+alias gitcrypt-decrypt='xclip -out -selection clipboard | base64 -d | git-crypt unlock -'
+alias clean-datagrip='find $HOME/.config/JetBrains/DataGrip* -type f -path "*/consoles/db/*" -name "*.sql" | grep -v "keep" | xargs -I{} rm -v "{}"'
+
+alias mpv-current='(pgrep mpv | xargs -I{} realpath /proc/{}/fd/6) | tee "$HOME/Desktop/current_mpv_files.txt"'
+alias cdi3='cd $HOME/dev/i3wmonarch'
+alias prjup="$HOME/dev/i3wmonarch/scripts/scm/git_push_svn_rebase_work.sh"
+alias i3-reconf='cd ~/dev/i3wmonarch && bash ./.hosts/$(hostname)/xinit && ./scripts/i3wm/fix_keyboard.sh && ./scripts/i3wm/gen_i3config.sh && i3-msg restart'
