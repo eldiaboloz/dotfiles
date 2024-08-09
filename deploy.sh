@@ -22,7 +22,7 @@ for ((i = 0; i < $linksC; i += 2)); do
   source="./${links[$i]}"
   target="${links[$i + 1]}"
   if [ -e "$source" ]; then
-      ln -svrf "$source" "$target"
+      ln -svnrf "$source" "$target"
   else
     echo "$source does not exist"
   fi
