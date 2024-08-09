@@ -1,5 +1,3 @@
-[ -f "$HOME/.profile" ] && source "$HOME/.profile"
-
 export ZSH=$HOME/.ohmyzsh
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 

@@ -24,8 +24,6 @@ fi
 
 # END COPY-PASTE FROM /etc/bash.bashrc
 
-[ -f "$HOME/.profile" ] && source "$HOME/.profile"
-
 # custom settings
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
