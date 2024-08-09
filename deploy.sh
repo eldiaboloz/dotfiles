@@ -7,6 +7,7 @@ cd "$(dirname "$0")"
 mkdir -pv "$HOME/.config"
 
 links=(
+  "/.profile" "$HOME/.profile"
   "/.config/powerline" "$HOME/.config/powerline"
   "/.bashrc" "$HOME/.bashrc"
   "/.tmux.conf" "$HOME/.tmux.conf"
