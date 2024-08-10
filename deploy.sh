@@ -8,6 +8,8 @@ mkdir -pv "$HOME/.config"
 
 links=(
   "/.profile" "$HOME/.profile"
+  "/.profile" "$HOME/.zprofile"
+  "/.profile" "$HOME/.bash_profile"
   "/.config/powerline" "$HOME/.config/powerline"
   "/.bashrc" "$HOME/.bashrc"
   "/.tmux.conf" "$HOME/.tmux.conf"
