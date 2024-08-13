@@ -8,4 +8,4 @@ alias clean-datagrip='find $HOME/.config/JetBrains/DataGrip* -type f -path "*/co
 alias mpv-current='(pgrep mpv | xargs -I{} realpath /proc/{}/fd/6) | tee "$HOME/Desktop/current_mpv_files.txt"'
 alias cdi3='cd $HOME/dev/i3wmonarch'
 alias prjup="$HOME/dev/i3wmonarch/scripts/scm/git_push_svn_rebase_work.sh"
-alias i3-reconf='cd ~/dev/i3wmonarch && bash ./.hosts/$(hostname)/xinit && ./scripts/i3wm/fix_keyboard.sh && ./scripts/i3wm/gen_i3config.sh && i3-msg restart'
+alias i3-reconf='cd ~/dev/i3wmonarch && ./scripts/i3wm/i3wm.php xinit && ./scripts/i3wm/fix_keyboard.sh && ./scripts/i3wm/i3wm.php i3conf && i3-msg restart'
