@@ -16,9 +16,6 @@ alias rsyncv='rsync -av --stats --progress --info=PROGRESS2 --numeric-ids --no-i
 alias digs='dig +short'
 alias ssht='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 alias scpt='scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
-
-
-
-
-
+alias ssha='sshpass -p a ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+alias scpa='sshpass -p a scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 
