@@ -3,6 +3,8 @@ export ZSH=$HOME/.ohmyzsh
 
 plugins=()
 DISABLE_AUTO_UPDATE="true"
+
+#ZSH_THEME=agnoster
 source $ZSH/oh-my-zsh.sh
 
 [ -f "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] \

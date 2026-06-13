@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+MY_KEY="APP_KEY=base64:$(openssl rand -base64 32)"
+
+if [ -n "${DISPLAY}" ]; then
+  echo -n "${MY_KEY}" | xclip -selection clipboard
+else
+  # not in a GUI session - echo the code
+  echo "${MY_KEY}"
+fi
+
+
+
+

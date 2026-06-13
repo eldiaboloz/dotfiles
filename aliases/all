@@ -11,7 +11,11 @@ alias glp='git log -p'
 alias gitdc="git diff --cached"
 alias gitd="git diff"
 alias gitco="git checkout"
+
 alias rsyncv='rsync -av --stats --progress --info=PROGRESS2 --numeric-ids --no-inc-recursive'
+alias rsyncva='rsync -av --stats --progress --info=PROGRESS2 --numeric-ids --no-inc-recursive -e "sshpass -p a ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
+alias rsyncvt='rsync -av --stats --progress --info=PROGRESS2 --numeric-ids --no-inc-recursive -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
+
 
 alias digs='dig +short'
 alias ssht='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
