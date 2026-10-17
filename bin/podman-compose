@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+MY_B="$(git rev-parse --show-toplevel || true)"
+if [[ -n "${MY_B}" && -d "${MY_B}/environment/rootless-podman" ]]; then
+  cd "${MY_B}/environment/rootless-podman"
+  if grep -q '^COMPOSE_FILE=' .env 2>/dev/null; then
+    EXTRACTED_FILE=$(grep '^COMPOSE_FILE=' .env | cut -d '=' -f 2- | tr -d "\"'")
+    export COMPOSE_FILE="$EXTRACTED_FILE"
+  fi
+fi
+
+exec /usr/bin/podman-compose "$@"
